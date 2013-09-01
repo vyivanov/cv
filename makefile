@@ -1,5 +1,5 @@
 PROCESSING=pdflatex
-FILES="Vladimir U. Ivanov.CV.tex"
+FILES="Vladimir.Ivanov.CV.tex"
 FLAGS=
 
 all:
