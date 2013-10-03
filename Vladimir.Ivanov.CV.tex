@@ -2,54 +2,82 @@
 %   PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass{resume}
+\documentclass{template}
 
-\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+% \setcounter{page}{1}
+% \pagenumbering{arabic}
 
 \name{Vladimir Ivanov}
-\address{\em Age: 25 \\ person@v-u-ivanov.com}
+\address{\Mobilefone \ +7$\cdot$924$\cdot$320$\cdot$09$\cdot$34 \ \ \Letter \ person@v-u-ivanov.com }
 
 \begin{document}
 
 %----------------------------------------------------------------------------------------
-%   EDUCATION SECTION
+%   SUMMARY
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Summary}
+Practical engineer with a focus on the EECS. The main purpose of the professional activity is create a useful things, solve a complex technical problems and bring a case to the end.
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%   EDUCATION
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{Education}
 
-%{\bf edX online learning initiative of Harvard University and MIT} \hfill {\em March 2012 - June 2012} \\
-%Course "Circuits and Electronics 6.002x" was completed with grade A.
+{\bf Far Eastern State Univercity, Vladivostok} \hfill {August 2005 -- June 2010} \\ 
+M.S. Department of General Physics and Electrical Engineering. \\
+Degree work was defended in the underwater robotics area. \\
+GPA: 3.63 out of 4.
 
-{\bf Far Eastern Federal Univercity (ex. FENU), Vladivostok} \hfill {August 2005 - June 2010} \\ 
-Master. Information Systems \& Technologies Engineer. \\
-Degree work was defended in the under-water robotics area.
+{\bf Secondary school 51, Vladivostok} \hfill {September 2003 -- June 2005} \\
+Secondary education. In-depth study of the Japanese language.
 
-{\bf Secondary school 51 of Vladivostok} \hfill {September 2003 - June 2005} \\
-Complete medium education. \\
-Obtained Japanese Language certificate due to passing of a final exam.
-
-{\bf Secondary school 51 of Vladivostok} \hfill {August 1995 - June 2003} \\
-Common education.
+{\bf Secondary school 51, Vladivostok} \hfill {September 1995 -- June 2003} \\
+General education. In-depth study of the Japanese language.
 
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
-%   EXPERIENCE SECTION
+%   SERTIFICATES
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Sertificates}
+
+\begin{itemize}
+\item Three-month course "Circuits and Electronics 6.002x". Earned a maximum passing grade. The online learning initiative of Harvard University and MIT, June 2012.
+\item Course of the Japanese language. The course of 1150 hours and a number of a final exams. Secondary school 51 of Vladivostok, 1995 -- 2005.
+\end{itemize}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%   PUBLICATIONS
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Publications}
+
+\begin{itemize}
+\item Ivanov V. "The diagnostic system of a motor drive module for a underwater robot". Master thesis. Institute of Marine Technology Problems FEB RAS, Vladivostok, June 2010.
+\end{itemize}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%   EXPERIENCE
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{Experience}
 
-\begin{rSubsection}{Rhonda Software, Ltd.}{October 2012 - present}{Embedded Software Engineer}{Vladivostok, RUS}
-\item Cambridge Silicon Radio (CSR) plc contractor.
-\item Distributed designing and supporting of an embedded software for a digital still cameras and mobile driver recorders based on the COACH system on a chip.
-\item Support offices are located in a number of countries: USA, Israel, Taiwan, Japan, Korea, China.
-\item Team in the Russia consist of over than 80 members including managers, developers and QA engineers.
-\item Main customers: Ability Enterprise, Garmin, Nikon, Panasonic, Pentax, Samsung, Sony.
-\item Supported peripheral domain: optic sensors, solid state storages, displays, communication protocols, PC side applied software.
-\item Improved processing performance of an user interface images for a customer projects.
+\begin{rSubsection}{Rhonda Software, Ltd.}{October 2012 -- present}{Embedded Software Engineer}{Vladivostok, RUS}
+\item Cambridge Silicon Radio plc contractor.
+\item Distributed designing and supporting of an embedded software for a digital still cameras and mobile driver recorders based on the COACH (Camera On A Chip) SoC. Support field offices are located in a number of countries: China, Israel, Japan, Korea, Russia, USA.
+\item Solving of a time-critical firmware issues under a customer's pressure. Designing and implementing of a new requested features, rework of an existing API.
+\item Supported peripheral domain: optic sensors, solid state storages, displays, communication protocols, PC-side applied software. Improved processing performance of an user interface images for a customer projects.
 \end{rSubsection}
 
-\begin{rSubsection}{Spider Pacific, Ltd.}{October 2010 - October 2012}{Embedded Systems Engineer}{Vladivostok, RUS}
+\begin{rSubsection}{Spider Pacific, Ltd.}{October 2010 -- October 2012}{Embedded Systems Engineer}{Vladivostok, RUS}
 \item Startup for a development of an applied hardware.
 \item Designed maket of a mechanical-less manipulator as part of a project management software system.
 \item Designed and manufactured prototype of a valve tubes amplifier for a PC sound cards.
@@ -59,31 +87,43 @@ Common education.
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
-%   TECHNICAL SKILLS SECTION
+%   SKILLS
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{Technical Skills}
+\begin{rSection}{Skills}
 
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-Development & C/C++, Python, Perl, multithread programming, version control, issue tracking \\
-Debugging   & logs analyzing, in circuit emulation, electrical equipment usage \\
-Electronics & digital/analog/valve curcuits, schematic routing and assembling \\
+Development & embedded C/C++, automation (Python and Perl), multithread and event-driven \\
+            & design, device drivers, version control, code review, issue tracking \\
+Debugging   & logs analyzing, in-circuit emulation, electrical equipment usage, remote debugging \\
+Electronics & digital/analog/valve curcuits design, selection of an electronic components, \\
+            & routing and assembling of a PCB \\
+Languages   & English, \begin{CJK}{UTF8}{min}日本語\end{CJK}, Russian (native) \\
+Misc        & lathe and milling works
 \end{tabular}
 
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
-%   HOBBY AND INTERESTS SECTION
+%   KEYWORDS
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Keywords}
+
+AVR, C, C++, CAN, Code Collaborator, Eagle, Eclipse, eTraxis, FileX, GCC, Gerber, Git, IEEE 802.3af, I2C, JIRA, JTAG, KiCAD, libpng, Linux, MCS-51, MIPS, optic sensor, Perforce, Perl, PHP, PIC, Proxxon, Python, Redmine, RS-232, SPI, SPICE, Spider Project, SQL, SVN, \TeX, ThreadX, UART, UML, Visual Studio, zlib
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%   HOBBY AND INTERESTS
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{Hobby and Interests}
 
-\begin{itemize}
-\item Hi-Tech and impacting one on a human being, designing hardware and software
-\item Physics (two completed univercity years), applied math, world economic
-\item Professional sports leagues (NHL, NFL, MLB), swimming (sports rank)
-\item Foreign languages (English, Japanese, Russian - native), cooking, electronic music
-\end{itemize}
+$\cdot$ Hi-Tech and impacting one on a human being, designing hardware and software \\
+$\cdot$ Physics (two completed univercity years), applied math, world economic \\
+$\cdot$ Professional sports leagues (NHL, NFL, MLB),  swimming (sports category) \\
+$\cdot$ Cooking, electronic music
 
 \end{rSection}
 
