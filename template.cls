@@ -28,6 +28,8 @@
 \usepackage{marvosym} % Required for MarVoSym font symbols
 \usepackage{CJK}
 \usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\usepackage[pdfborder={0 0 0}]{hyperref}
+\usepackage{graphicx}
 
 \pagestyle{empty} % Suppress page numbers
 
@@ -83,6 +85,7 @@
     \printaddress{\@addressone}}
   \@ifundefined{@addresstwo}{}{ % Print the second address if specified
     \printaddress{\@addresstwo}}
+    \medskip
 }
 
 %----------------------------------------------------------------------------------------
