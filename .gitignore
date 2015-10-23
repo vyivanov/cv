@@ -1,5 +1,5 @@
 *.aux
 *.log
 .*swp
-CV.sublime-project
-CV.sublime-workspace
+*.out
+*~*
