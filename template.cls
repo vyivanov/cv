@@ -9,6 +9,8 @@
 \usepackage{graphicx}                               %% Required for picture inline
 \usepackage[pdfborder={0 0 0}]{hyperref}
 \usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry}
+\usepackage{csquotes}
+\usepackage[spanish]{babel}
 
 %% \pagestyle{empty}                                %% Comment out to suppress page numbers
 \setcounter{page}{1}
