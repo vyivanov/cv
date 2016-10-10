@@ -14,7 +14,7 @@
 
 %% \pagestyle{empty}                                %% Comment out to suppress page numbers
 \setcounter{page}{1}
-\pagenumbering{roman}
+\pagenumbering{arabic}
 
 %%%%  HEADER COMMANDS  %%%%
 
@@ -44,7 +44,7 @@
 \def \printname {                                   %% \printname is used to print the name as a page header
     \begingroup
         \hfil {
-            \MakeUppercase{\namesize\bf \@name}
+            \namesize\bf \@name
         }
         \hfil
         \nameskip\break
@@ -106,7 +106,7 @@
 }{\end{list}\vspace{0.5em}}                         %% Some space after the list of bullet points
 
 % The below commands define the whitespace after certain things in the document - they can be \smallskip, \medskip or \bigskip
-\def\namesize{\LARGE}                               %% Size of the name at the top of the document
+\def\namesize{\huge}                               %% Size of the name at the top of the document
 \def\addressskip{\smallskip}                        %% The space between the two address (or phone/email) lines
 \def\sectionlineskip{\medskip}                      %% The space above the horizontal line for each section
 \def\nameskip{\bigskip}                             %% The space after your name at the top
