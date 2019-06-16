@@ -1,18 +1,18 @@
 \ProvidesClass{template}[]
-\LoadClass[11pt,letterpaper]{article}
+\LoadClass[10pt,letterpaper]{article}
 
 \usepackage[parfill]{parskip}                       %% Remove paragraph indentation
 \usepackage{array}                                  %% Required for boldface (\bf and \bfseries) tabular columns
 \usepackage{ifthen}                                 %% Required for ifthenelse statements
 \usepackage{marvosym}                               %% Required for MarVoSym font symbols
-\usepackage{CJK}                                    %% Required for Japanese fonts
 \usepackage{graphicx}                               %% Required for picture inline
 \usepackage[pdfborder={0 0 0}]{hyperref}
-\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry}
+\usepackage[left=0.5in,top=0.4in,right=0.5in,bottom=0.5in]{geometry}
 \usepackage{csquotes}
 \usepackage[spanish]{babel}
+\usepackage{fontawesome}
 
-%% \pagestyle{empty}                                %% Comment out to suppress page numbers
+\pagestyle{empty}                                   %% Comment out to suppress page numbers
 \setcounter{page}{1}
 \pagenumbering{arabic}
 
@@ -93,20 +93,14 @@
     \itemsep -0.5em \vspace{-0.5em}                 %% Compress items in list together for aesthetics
 }{\end{list}\vspace{0.5em}}                         %% Some space after the list of bullet points
 
-\newenvironment{rHobby} {
+\newenvironment{rItemize} {
     \medskip
     \begin{list}{$\cdot$}{\leftmargin=0em}          %% \cdot used for bullets, no indentation
     \itemsep -0.5em \vspace{-0.5em}                 %% Compress items in list together for aesthetics
 }{\end{list}\vspace{0.5em}}                         %% Some space after the list of bullet points
 
-\newenvironment{rItemize} {
-    \medskip
-    \begin{list}{\textbullet}{\leftmargin=1em}      %% \cdot used for bullets, no indentation
-    \itemsep 0em \vspace{-0.5em}                    %% Compress items in list together for aesthetics
-}{\end{list}\vspace{0.5em}}                         %% Some space after the list of bullet points
-
 % The below commands define the whitespace after certain things in the document - they can be \smallskip, \medskip or \bigskip
-\def\namesize{\huge}                               %% Size of the name at the top of the document
+\def\namesize{\LARGE}                               %% Size of the name at the top of the document
 \def\addressskip{\smallskip}                        %% The space between the two address (or phone/email) lines
 \def\sectionlineskip{\medskip}                      %% The space above the horizontal line for each section
 \def\nameskip{\bigskip}                             %% The space after your name at the top
