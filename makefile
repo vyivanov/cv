@@ -5,4 +5,4 @@ FLAGS=
 all:
 	$(PROCESSING) $(FLAGS) $(FILES)
 clean:
-	rm -f *.aux *.log .*swp
+	rm -f *.aux *.log *.swp *.out
