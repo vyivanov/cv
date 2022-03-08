@@ -3,117 +3,87 @@
 \name{Vladimir Yu. Ivanov}
 
 \address{
-    \faPhoneSquare \ +7$\cdot$924$\cdot$320$\cdot$09$\cdot$34 \textbar \
-    \faEnvelope \ \href{mailto:job@vova-ivanov.info}{job@vova-ivanov.info} \textbar \
+    \faPhoneSquare \ +7$\cdot$924$\cdot$320$\cdot$09$\cdot$34 $\bullet$\
+    \faEnvelope \ \href{mailto:job@vova-ivanov.info}{job@vova-ivanov.info} $\bullet$\
     \faLinkedinSquare \ \href{https://www.linkedin.com/in/vladimir-yu-ivanov/}{vladimir-yu-ivanov}}
 
-\address{\em Saint Petersburg, Russian Federation}
+\address{\em Software (ML) Engineer, Moscow, RU}
 
 \begin{document}
 
 \begin{rSection}{summary}
 
-Proficient engineer (8+ yoe) with a focus on the EECS. Visited various electronics plants as board bring-up
-engineer for customer products. Helped robotic startup on the early stages of company formation. Services in
-HW and SW domains from development to deployment.
-
-Main areas of interest: consumer electronics,
-industrial and mobile robotics, automotive industry, high quality products, mechatronics, cyber-physical systems,
-technologies impact on human beings and on economics.
+$\bullet$ Proficient engineer with focus on 3 domains. Electrical Engineering, Computer Science, Machine Learning. \\
+$\bullet$ Built practical experience in 3 areas. Consumer Electronics, Industrial IoT and Robotics, Self-Driving Cars. \\
+$\bullet$ Helped to solve SW and HW problems for 4 types of companies. Outsource, Startup, Private, Public.
 
 \end{rSection}
 
 \begin{rSection}{skills}
-\begin{rItemize}
+\begin{tabular}{llll}
 
-\item \textbf{Computer languages:} plain C, C++17 and STL, Python, Bash, TeX, 8-bit assembler.
-\item \textbf{Development tools:} gcc, gdb, Make, CMake, Docker, Vagrant, Ansible, Jenkins, SAST.
-\item \textbf{Various technologies:} TCP/IP, REST, Maxima, Actor Model, deb-packages.
-\item \textbf{Version control systems:} Subversion, Perforce, Git (main).
-\item \textbf{Software platforms:} POSIX, WinAPI, RTOS, ROS, Qt.
-\item \textbf{Embedded systems:} MCU, PLC, PCBA, Buildroot, device drivers, semiconductors, EE-lab equipment.
+$\bullet$ \textbf{Languages}     & C, C++, Python, Bash          & $\bullet$ \textbf{Embedded}      & MCU, RTOS, Schematics, Lab Equipment \\
+$\bullet$ \textbf{Build Systems} & CMake (main), Make, Bazel     & $\bullet$ \textbf{VCS, DVCS}     & Git (main), Perforce, Subversion \\
+$\bullet$ \textbf{Libraries}     & STL, Boost, CAF, Poco         & $\bullet$ \textbf{OS}            & WinAPI, POSIX, ThreadX, KasperskyOS \\
+$\bullet$ \textbf{Frameworks}    & ROS, Qt                       & $\bullet$ \textbf{DevOps}        & Docker, Vagrant, Ansible, SaltStack  \\
+$\bullet$ \textbf{Testing}       & CppUTest, GoogleTest          & $\bullet$ \textbf{CI, CD}        & QuickBuild, Jenkins, TeamCity, TFS \\
+$\bullet$ \textbf{SAST}          & Cppcheck, PVS‑Studio          & $\bullet$ \textbf{Data Analysis} & Jupyter, NumPy, Pandas, Seaborn, SQL \\
+$\bullet$ \textbf{Comp. Science} & Algorithms, Design Patterns   & $\bullet$ \textbf{ML, DL}        & Scikit-learn, Tensorflow (Keras), PyTorch \\
+$\bullet$ \textbf{Applied Math}  & Lin. Algebra, Calculus, Stats \\
 
-\end{rItemize}
+\end{tabular}
 \end{rSection}
 
 \begin{rSection}{experience}
-\begin{rCompany}{\href{https://www.tra.ai}{TRA robotics}}{June 2017 -- present}{Lead Software Engineer (full-time)}{Saint Petersburg, Russian Federation}
+\begin{rCompany}{\href{https://www.aprotech.ru/}{Kaspersky, Aprotech}}{February 2022 -- present}{Lead Software Engineer}{Moscow, RU}
 
-\item Transnational technological company around Industry 4.0 and smart manufacturing.
-\item Implemented SW for robotic tool controller as a member of multi-domain team. Presented HW and SW design proposals, performed initial SW implementation and
-      controller integration into factory SW ecosystem. Launched 3 kinds of tools: Schunk's jaw-gripper, tool-changer and custom glue-gun.
-      Stack: C++17, CMake, Boost, POCO, CAF, yaml-cpp, Python, PyTest, Bash, Docker, Vagrant, Systemd, Ansible, Doxygen, RPi CM, STM32.
-\item Helped to interview and to on-board 2 candidates for Embedded Engineer team role to cover controller's HW part.
-\item Performed R\&D to evaluate gripper controller candidates. Ended up with BnR industrial PLC.
-      Created network control FW. Stack: C++11, Automation Studio specific SW blocks.
-\item Implemented gripper component and integrated with other factory components.
-      Stack: C++14, Docker, Boost, POCO, CMake, Bash, Python, PyTest, syslog, FPM, RPi.
-\item Investigated how to launch remote control for 6-axis robotic manipulators. Connected 3 vendors: Fanuc, ABB, Universal Robots. Stack: C++11, ROS, Python.
+\item TBD
 
 \end{rCompany}
-\begin{rCompany}{\href{http://www.rhondasoftware.com}{Rhonda Software}}{May 2015 -- May 2017}{Software Engineer III (full-time)}{Vladivostok, Russian Federation}
+\begin{rCompany}{\href{https://sdc.yandex.com/}{Yandex, Self-Driving Group}}{October 2019 -- May 2021}{Software Engineer}{Moscow, RU}
 
-\item Camera SDK development team member based on Ambarella SoC with ARM core.
-\item Supported peripheral domain as member of SDK sub-team. LKM and RTOS device drivers, EE and PCB review for customer's projects,
-      FW burning tool features (Qt application).
-\item Implemented data transfer library: cross-platform (Windows, Linux, ThreadX) and multi-protocol (USB, UART, TCP). The library was used to test SDK functionality
-      via RPC in QA lab and on customer's production lines. Stack: plain C, C++11, CMake, Python, CppUTest, Cppcheck, Doxygen, OS-abstraction layer.
-\item Prepared and provided boards bring-up for 5 customer's projects in electronics factories: Nanit, Fusar, Glide (Flextronics, TX), REVL (AQS, CA),
-      Soloshot (Asia Optical, Shenzhen). EVT and DVT project phases.
+\item Integrated orientation (IMU) and localization (RTK) device into electrical and network rover infrastructure (GeoHub).
+\item Implemented 2 features for GeoHub: power rails monitor (ADC driver, ROS node), programmatic config for IMU frame.
+\item Ported rootfs switcher from amd64 (PC) to arm64 (Jetson AGX Xavier). Covered 2 scenarios: Yandex.Rover, Xavier farm.
+\item Camera pipeline. Reduced logging size via ring buffer. Implemented 9 new status monitors and camera frames filter.
+\item Configured CI (TeamCity) for 2 third-party libs (ser2net, rtklib). Artifacts: deb packets for armhf, arm64, amd64.
 
 \end{rCompany}
-\begin{rCompany}{\href{http://www.rhondasoftware.com}{Rhonda Software}}{October 2012 -- May 2015}{Software Engineer I, II (full-time)}{Vladivostok, Russian Federation}
+\begin{rCompany}{\href{https://arrival.com/}{Arrival Robotics}}{June 2017 -- October 2019}{Lead Software Engineer}{St. Petersburg, RU}
 
-\item CSR plc contractor. Distributed support of embedded SW for ODM/OEM customers based on COACH SoC with MIPS core:
-      Nikon, Pentax, Garmin, Samsung, Fujifilm, Ability. Support sites: China, Israel, Japan, Russia, South Korea, US.
-\item Solving of time critical project issues under customer's pressure. Resolved a number of MP-block SW problems.
-\item Supported peripheral domain as member of team. CMOS/CCD image sensors: drivers bug fixing and implementation of new capabilities.
-      NV memory: FS bug fixing, NAND drivers timing optimizations. Display cluster: issues related to video output (LCD, HDMI). Volatile memory:
-      DRAM performance measurement and timing optimizations. On-chip peripheral: BSP drivers (GPIO, ADC, PWM, RTC, SPI, I2C, UART, USB, function-specific HW units).
-      PC-side applied SW: bug fixing and new features implementation for FW burning tool (windows forms).
-\item SoC SW trainings at CSR Israel: MATAM, Haifa.
+\item Launched programmatic control for 4 industrial robot manipulators. Vendors: Kuka, Fanuc, ABB, Universal Robots.
+\item Contributed 1 feature to robotic simulator (Gazebo): control of scene objects via keyboard (moving, rotation).
+\item Implemented SW (REST) for robotic tool controller. Launched 3 kinds of tools: jaw gripper, glue gun, tool changer.
+\item Helped to prepare 2 demo days for investors at local lab (St. Petersburg, RU) and at robotic factory (Banbury, UK).
+\item Tech interview holding. Reviewed more than 10 candidates: embedded SW engineers, HW engineers, QA engineers.
 
 \end{rCompany}
-\begin{rCompany}{Spider Pacific}{October 2010 -- October 2012}{Electrical Engineer (full-time)}{Vladivostok, Russian Federation}
+\begin{rCompany}{\href{http://www.rhondasoftware.com}{Rhonda Software}}{October 2012 -- May 2017}{Software Engineer I, II, III}{Vladivostok, RU}
 
-\item Applied HW design and manufacturing.
-\item Designed and manufactured network PoE injector (PSE). Provided IEEE 802.3af full compatible solution. \newline
-      The injector was used in a number of computer network projects by customers. BOM: LTC4263 IC, AC/DC.
-\item Manufactured transformer-less stereo amplifier for headphones. BOM: vacuum tubes and audio-quality components.
-\item Designed prototype of mechanical-less manipulator. BOM: G-sensor, gyro sensor, Arduino, Wiring, USB, OP-amps.
+\item Supported Camera-SDK (proprietary) components. Linux and RTOS device drivers. Firmware burning tool (Qt).
+\item Implemented raw data transceiver lib. Cross-platform: Windows, Linux, RTOS, multi-protocol: USB, UART, TCP.
+\item Performed products bring-up (EVT, DVT) in electronics plants for 5 customers: Nanit, Fusar, Glide, Revl, Soloshot.
+\item Supported SW of photo cameras. Drivers: CCD/CMOS, BSP, NAND, DRAM, LCD. Firmware burning tool (WinForms).
+\item Resolved a number of MP-blocking SW issues for 6 camera brands: Nikon, Pentax, Fujifilm, Samsung, Garmin, Ability.
 
+\end{rCompany}
+\begin{rCompany}{Spider Pacific}{October 2010 -- October 2012}{Electrical Engineer}{Vladivostok, RU}
+
+\item Designed HW of 4 device prototypes via end-to-end process: schematic (Eagle CAD), firmware (C99), PCBA.
+\item Utilized MCU (AVR), text LCD, accel-gyro sensors, vacuum tubes, op-amps, domain-specific IC and more.
 
 \end{rCompany}
 \end{rSection}
 
 \begin{rSection}{education}
 
-{\bf \href{https://www.msu.ru/en/}{Moscow State University}} (Moscow, Russian Federation) \hfill {2018 -- 2020} \newline
-MBA, Technology Management. School of Public Administration.
+{\bf \href{https://en.misis.ru}{National University of Science and Technology \textquote{MISIS}}} \hfill {2020 -- present} \\
+Institute of Information Technology and Computer Science \hfill {Moscow, Russian Federation} \\
+M.Sc. Machine Learning. GPA: 3.78 out of 4.00
 
-{\bf \href{https://www.dvfu.ru/en/}{Far Eastern State University}} (Vladivostok, Russian Federation) \hfill {2005 -- 2010} \newline
-Engineer, General Physics and Electronics. Institute of Physics and Information Technologies.
-
-\end{rSection}
-
-\begin{rSection}{languages}
-\begin{rItemize}
-
-\item Russian, native
-\item English, ability to hold conversation
-\item Japanese, elementary, alphabet, kanji
-
-\end{rItemize}
-\end{rSection}
-
-\begin{rSection}{keywords}
-
-1-Wire, ADC, Ansible, Atomthreads, AVR, avr-gcc, BAT, Bash, Berkeley sockets, Boost, board bring-up, BSP, Buildroot, C, C++, CAF, ccache, CMake,
-Code Collaborator, Cppcheck, CppUTest, cross-compiler, customer support, Cygwin, DAC, DEB package, device driver, Docker, Doxygen, DVT, Eagle CAD,
-EE, Eigen, EVT, FAT, FileX, GCC, Gerber, Git, GitLab, G-sensor, gyro sensor, HW\&SW co-design, IEEE 802.3af, I2C, IAR, image sensor, Jenkins, JIRA,
-Jom, JTAG, KiCAD, libpng, libusb, Linux, LKM, Make, Maxima, macOS, microcontroller, MIPS, Mind Maps, MinGW, NMake, NPI, OOP, OS2000, OSI, Perforce,
-PLC, POCO, POSIX, Proxxon, Python, PVS-Studio, PWM, Qt, QuickBuild, RAW Bayer, R\&D, ReSharper C++, REST, Review Board, ROS, RS-232, RTOS, SPI, SoC,
-Sprint Layout, SQL, STL, SVN, TCP/IP, TeX, ThreadX, tmux, UART, UML, USB, Vagrant, Visual Studio, Win32, Windows, Winsock, zlib
+{\bf \href{https://www.dvfu.ru/en/}{Far Eastern State University}} \hfill {2005 -- 2010} \\
+Institute of Physics and Information Technology \hfill {Vladivostok, Russian Federation} \\
+B.Sc. Electrical Engineering. GPA: 3.63 out of 4.00
 
 \end{rSection}
 

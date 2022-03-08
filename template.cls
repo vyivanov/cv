@@ -7,7 +7,7 @@
 \usepackage{marvosym}                               %% Required for MarVoSym font symbols
 \usepackage{graphicx}                               %% Required for picture inline
 \usepackage[pdfborder={0 0 0}]{hyperref}
-\usepackage[left=0.5in,top=0.4in,right=0.5in,bottom=0.5in]{geometry}
+\usepackage[left=0.5in,top=0.4in,right=0.5in,bottom=0.6in]{geometry}
 \usepackage{csquotes}
 \usepackage[spanish]{babel}
 \usepackage{fontawesome}
@@ -100,9 +100,8 @@
 }{\end{list}\vspace{0.5em}}                         %% Some space after the list of bullet points
 
 % The below commands define the whitespace after certain things in the document - they can be \smallskip, \medskip or \bigskip
-\def\namesize{\LARGE}                               %% Size of the name at the top of the document
+\def\namesize{\huge}                               %% Size of the name at the top of the document
 \def\addressskip{\smallskip}                        %% The space between the two address (or phone/email) lines
 \def\sectionlineskip{\medskip}                      %% The space above the horizontal line for each section
 \def\nameskip{\bigskip}                             %% The space after your name at the top
 \def\sectionskip{\medskip}                          %% The space after the heading section
-
