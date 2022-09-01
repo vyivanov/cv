@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-docker run --rm -it -v $(pwd):/opt/markup vyivanov/latex-docker:master ${1}
+docker run --rm -it -v "$(pwd)":/opt/markup vyivanov/latex-docker:master "${1}"
