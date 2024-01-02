@@ -7,7 +7,7 @@
 \usepackage{marvosym}                               %% Required for MarVoSym font symbols
 \usepackage{graphicx}                               %% Required for picture inline
 \usepackage[pdfborder={0 0 0}]{hyperref}
-\usepackage[left=0.5in,top=0.4in,right=0.5in,bottom=0.6in]{geometry}
+\usepackage[left=0.3in,top=0.3in,right=0.3in,bottom=0.3in]{geometry}
 \usepackage{csquotes}
 \usepackage[spanish]{babel}
 \usepackage{fontawesome}
