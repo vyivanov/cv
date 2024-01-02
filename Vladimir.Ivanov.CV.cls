@@ -75,7 +75,7 @@
     \hrule                                          %% Horizontal line
     \medskip
     \begin{list}{} {                                %% List for each individual item in the section
-        \setlength{\leftmargin}{1.5em}              %% Margin within the section
+        \setlength{\leftmargin}{1.0em}              %% Margin within the section
     }
     \item[]
 }{\end{list}}
@@ -90,9 +90,11 @@
     \itemsep -0.6em \vspace{-0.5em}                 %% Compress items in list together for aesthetics
 }{\end{list}\vspace{0.5em}}                         %% Some space after the list of bullet points
 
+%%%% SUMMARY FORMATTING %%%%
+
 \newenvironment{rItemize} {
-    \medskip
-    \begin{list}{$\bullet$}{\leftmargin=0em}        %% \cdot used for bullets, no indentation
+    \smallskip
+    \begin{list}{$\bullet$}{\leftmargin=1.0em}      %% \bullet used for bullets
     \itemsep -0.6em \vspace{-0.5em}                 %% Compress items in list together for aesthetics
 }{\end{list}}                                       %% Some space after the list of bullet points
 
