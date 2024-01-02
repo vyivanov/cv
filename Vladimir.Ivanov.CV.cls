@@ -10,7 +10,7 @@
 \usepackage[left=0.3in,top=0.3in,right=0.3in,bottom=0.3in]{geometry}
 \usepackage{csquotes}
 \usepackage[spanish]{babel}
-\usepackage{fontawesome}
+\usepackage{fontawesome5}
 
 \pagestyle{empty}                                   %% Comment out to suppress page numbers
 \setcounter{page}{1}
