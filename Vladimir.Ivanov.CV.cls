@@ -63,7 +63,6 @@
     \@ifundefined{@addresstwo}{} {                  %% Print the second address if specified
         \printaddress{\@addresstwo}
     }
-    \medskip
 }
 
 %%%%  SECTION FORMATTING  %%%%
