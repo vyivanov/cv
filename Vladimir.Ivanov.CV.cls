@@ -83,7 +83,7 @@
 %%%%  EXPERIENCE FORMATTING  %%%%
 
 \newenvironment{rCompany}[6] {
-    {\bf #1} \ifthenelse{\equal{#2}{}} {--} {(\href{http://#2}{#2}) --} {#3} \hfill {#4} \\
+    {\bf #1} \ifthenelse{\equal{#2}{}} {:} {(\href{http://#2}{#2}):} {#3} \hfill {#4} \\
     {\em #5} \hfill {#6}
     \smallskip
     \begin{list}{$\cdot$}{\leftmargin=0em}          %% \cdot used for bullets, no indentation
