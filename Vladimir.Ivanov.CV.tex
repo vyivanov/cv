@@ -43,13 +43,13 @@ $\bullet$ \textbf{Frameworks}    & ROS, MQTT (Mosquitto), Qt   & $\bullet$ \text
 \item Fixed issue with secure connection between product and Siemens CNC. Root cause -- invalid X.509 certificate generation.
 
 \end{rCompany}
-\begin{rCompany}{Yandex, Self-Driving Group}{sdg.yandex.ru}{contribution to self-driving cars technology}{Oct 2019 -- Jun 2021}{Software Engineer}{Moscow}
+\begin{rCompany}{Yandex, Self-Driving Group}{sdg.yandex.ru}{Contribution to various self-driving technologies}{Oct 2019 -- Jun 2021}{Software Engineer}{Moscow}
 
-\item Integrated orientation (IMU) and localization (RTK) device into electrical and network rover infrastructure (GeoHub).
-\item Implemented 2 features for GeoHub: power rails monitor (ADC driver, ROS node), programmatic config for IMU frame.
+\item Integrated new orientation (IMU) and localization (GNSS) device into electrical and network rover infrastructure (GeoHub).
+\item Implemented 2 features for GeoHub: power rails monitor (ADC driver, ROS node), config for IMU frame transformation.
 \item Ported rootfs switcher from amd64 (PC) to arm64 (Jetson AGX Xavier). Covered 2 scenarios: Yandex.Rover, Xavier farm.
-\item Camera pipeline. Reduced logging size via ring buffer. Implemented 9 new status monitors and camera frames filter.
-\item Configured CI (TeamCity) for 2 third-party libs (ser2net, rtklib). Artifacts: deb packets (armhf, arm64, amd64).
+\item Camera pipeline. Reduced logging size via ring buffer (Boost). Implemented 9 new status monitors and camera frames filter.
+\item Configured CI (TeamCity) for 2 third-party dependencies (ser2net, RTKLib). Artifacts -- deb packages (arm32, arm64, amd64).
 
 \end{rCompany}
 \begin{rCompany}{Arrival Robotics}{arrival.com}{creation of flexible robotized industrial factory}{Jun 2017 -- Sep 2019}{Lead Software Engineer}{St. Petersburg}
