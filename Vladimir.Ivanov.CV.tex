@@ -35,12 +35,12 @@ $\bullet$ \textbf{Frameworks}    & ROS, MQTT (Mosquitto), Qt   & $\bullet$ \text
 \end{rSection}
 
 \begin{rSection}{experience}
-\begin{rCompany}{Kaspersky, Aprotech}{aprotech.online}{development of secure industrial data diodes}{Feb 2022 -- Sep 2022}{Senior Software Engineer}{Moscow}
+\begin{rCompany}{Kaspersky Lab, Aprotech}{aprotech.online}{Industrial data diodes development with KasperskyOS}{Feb 2022 -- Sep 2022}{Senior Software Engineer}{Moscow}
 
-\item Suggested and contributed 1 feature: print product info (semver, build date, commit SHA, CI id and arbitrary label).
-\item Helped to port MQTT publisher PoC on new code base. Added MQTT over TLS support. Utilized Paho, Mosquitto.
-\item Minimized surface attack on 3rd-party via reducing crypto providers from 2 to 1 (MbedTLS replaced with OpenSSL).
-\item Fixed issue with X.509 certificate generation to secure connect KISG-100 product and Siemens SINUMERIK CNC.
+\item Helped to save product value: ported MQTT publisher prototype on new code base and added MQTT over SSL support.
+\item Reduced attack surface on product via minimazing cryptographic providers from 2 to 1: OpenSSL+MbedTLS to OpenSSL.
+\item Improved user experience via 1 useful feature -- logging product info: semver, build date, Git SHA, CI Id and arbitrary label.
+\item Fixed issue with secure connection between product and Siemens CNC. Root cause -- invalid X.509 certificate generation.
 
 \end{rCompany}
 \begin{rCompany}{Yandex, Self-Driving Group}{sdg.yandex.ru}{contribution to self-driving cars technology}{Oct 2019 -- Jun 2021}{Software Engineer}{Moscow}
