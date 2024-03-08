@@ -7,10 +7,10 @@
 \usepackage{marvosym}                               %% Required for MarVoSym font symbols
 \usepackage{graphicx}                               %% Required for picture inline
 \usepackage[pdfborder={0 0 0}]{hyperref}
-\usepackage[left=0.5in,top=0.4in,right=0.5in,bottom=0.6in]{geometry}
+\usepackage[left=0.3in,top=0.3in,right=0.3in,bottom=0.3in]{geometry}
 \usepackage{csquotes}
 \usepackage[spanish]{babel}
-\usepackage{fontawesome}
+\usepackage{fontawesome5}
 
 \pagestyle{empty}                                   %% Comment out to suppress page numbers
 \setcounter{page}{1}
@@ -63,7 +63,6 @@
     \@ifundefined{@addresstwo}{} {                  %% Print the second address if specified
         \printaddress{\@addresstwo}
     }
-    \medskip
 }
 
 %%%%  SECTION FORMATTING  %%%%
@@ -76,7 +75,7 @@
     \hrule                                          %% Horizontal line
     \medskip
     \begin{list}{} {                                %% List for each individual item in the section
-        \setlength{\leftmargin}{1.5em}              %% Margin within the section
+        \setlength{\leftmargin}{1.0em}              %% Margin within the section
     }
     \item[]
 }{\end{list}}
@@ -84,22 +83,24 @@
 %%%%  EXPERIENCE FORMATTING  %%%%
 
 \newenvironment{rCompany}[6] {
-    {\bf #1} \ifthenelse{\equal{#2}{}} {--} {[\href{http://#2}{ #2 }] --} {#3} \hfill {#4} \\
+    {\bf #1} \ifthenelse{\equal{#2}{}} {:} {(\href{http://#2}{#2}):} {#3} \hfill {#4} \\
     {\em #5} \hfill {#6}
     \smallskip
     \begin{list}{$\cdot$}{\leftmargin=0em}          %% \cdot used for bullets, no indentation
-    \itemsep -0.5em \vspace{-0.5em}                 %% Compress items in list together for aesthetics
+    \itemsep -0.6em \vspace{-0.5em}                 %% Compress items in list together for aesthetics
 }{\end{list}\vspace{0.5em}}                         %% Some space after the list of bullet points
 
+%%%% SUMMARY FORMATTING %%%%
+
 \newenvironment{rItemize} {
-    \medskip
-    \begin{list}{$\bullet$}{\leftmargin=0em}        %% \cdot used for bullets, no indentation
+    \smallskip
+    \begin{list}{$\bullet$}{\leftmargin=1.0em}      %% \bullet used for bullets
     \itemsep -0.6em \vspace{-0.5em}                 %% Compress items in list together for aesthetics
 }{\end{list}}                                       %% Some space after the list of bullet points
 
 % The below commands define the whitespace after certain things in the document - they can be \smallskip, \medskip or \bigskip
 \def\namesize{\huge}                                %% Size of the name at the top of the document
 \def\addressskip{\smallskip}                        %% The space between the two address (or phone/email) lines
-\def\sectionlineskip{\medskip}                      %% The space above the horizontal line for each section
-\def\nameskip{\bigskip}                             %% The space after your name at the top
-\def\sectionskip{\medskip}                          %% The space after the heading section
+\def\sectionlineskip{\medskip}                    %% The space above the horizontal line for each section
+\def\nameskip{\medskip}                             %% The space after your name at the top
+\def\sectionskip{\smallskip}                        %% The space after the heading section

@@ -3,21 +3,22 @@
 \name{Vladimir Yu. Ivanov}
 
 \address{
-    \faGithubSquare \ \href{https://github.com/vyivanov}{github.com/vyivanov} $\bullet$\
-    \faEnvelope \ \href{mailto:vladimir.u.ivanov@gmail.com}{vladimir.u.ivanov@gmail.com} $\bullet$\
-    \faLinkedinSquare \ \href{https://linkedin.com/in/vladimir-yu-ivanov}{bit.ly/3AT2CHF}
+    \faEnvelope {} \href{mailto:vladimir.u.ivanov@gmail.com}{vladimir.u.ivanov@gmail.com} {}
+    \faTelegram {} \href{https://t.me/vyivanov}{@vyivanov} {}
+    \faGithub {} \href{https://github.com/vyivanov}{github.com/vyivanov} {}
+    \faLinkedin {} \href{https://linkedin.com/in/vladimir-yu-ivanov}{bit.ly/3AT2CHF}
 }
 
-\address{\em Software Engineer, Moscow (C++, Robotics, IIoT)}
+\address{\em Software Engineer (10+ years), Moscow}
 
 \begin{document}
 
 \begin{rSection}{summary}
 \begin{rItemize}
 
-\item Proficient engineer with focus on 3 domains. Computer Science, Electrical Engineering, Machine Learning.
-\item Built practical experience in 3 areas. Consumer Electronics, Industrial IoT and Robotics, Self-Driving Technology.
-\item Helped to solve SW and HW problems for 4 types of companies. Outsource, Startup, Private, Public.
+\item Proficient engineer with focus on \textbf{3 domains}: Computer Science, Electrical Engineering, Machine Learning.
+\item Broad practical experience in \textbf{3 areas}: Consumer Electronics, Industrial IoT and Robotics, Self-Driving Technologies.
+\item Help to solve software and hardware problems for \textbf{4 types} of companies: Outsource, Startup, Product, Bigtech.
 
 \end{rItemize}
 \end{rSection}
@@ -25,34 +26,47 @@
 \begin{rSection}{skills}
 \begin{tabular}{llll}
 
-$\bullet$ \textbf{Main Langs}    & C, C++17 (STL, Boost)       & $\bullet$ \textbf{DevOps Tools} & Docker, Vagrant, SaltStack \\
-$\bullet$ \textbf{Misc Langs}    & Bash, Python-3 (ML/DL libs) & $\bullet$ \textbf{OS, RTOS}     & WinAPI, POSIX, ThreadX \\
-$\bullet$ \textbf{Build Systems} & CMake, Make, Bazel          & $\bullet$ \textbf{CI/CD}        & Jenkins, TeamCity, TFS \\
-$\bullet$ \textbf{VCS, DVCS}     & Git, Perforce, Subversion   & $\bullet$ \textbf{SAST, DAST}   & Cppcheck, PVS-Studio, Clang-Tidy \\
-$\bullet$ \textbf{Frameworks}    & ROS, MQTT (Mosquitto), Qt   & $\bullet$ \textbf{Embedded}     & MCU (AVR), Schematic, Board Bring-up
+$\bullet$ \textbf{main languages}  & C++(17), C(99), Python(3),      & $\bullet$ \textbf{libraries}    & STL, Boost, OpenCV, Eigen, OpenSSL, Qt,       \\
+                                   & Bash, Assembler (8 bit)         &                                 & ROS(1), FlatBuffers, CAF (actor model)        \\
+$\bullet$ \textbf{build config}    & CMake, Make, Conan, Bazel,      & $\bullet$ \textbf{linux infra}  & systemd services, kernel modules (drivers),   \\
+                                   & Docker (Dev Containers, Cross)  &                                 & deb packages (CPack, debhelper), Buildroot    \\
+$\bullet$ \textbf{version control} & Git, Subversion (git-svn), DVC  & $\bullet$ \textbf{ci/cd}        & Jenkins, GitLab CI, Azure DevOps (TFS)        \\
+$\bullet$ \textbf{system design}   & GRASP, SOLID, GoF, Algorithms   & $\bullet$ \textbf{data science} & image classification (CNN, transfer learning) \\
+$\bullet$ \textbf{unit testing}    & Google Test, Catch, PyTest      & $\bullet$ \textbf{interfaces}   & UART (RS-232), SPI, I2C, CAN, GPIO            \\
+$\bullet$ \textbf{problem solving} & GDB, Valgrind, Strace, Ltrace,  & $\bullet$ \textbf{embedded}     & lab equipment, schematics, board bringup,     \\
+                                   & Sanitizers, Wireshark, Perf     &                                 & RTOS (Eclipse ThreadX), PLC (B\&R)
 
 \end{tabular}
 \end{rSection}
 
 \begin{rSection}{experience}
-\begin{rCompany}{Kaspersky, Aprotech}{aprotech.online}{development of secure industrial data diodes}{2022 -- 2022}{Senior Software Engineer}{Moscow, RU}
+\begin{rCompany}{Cognitive Robotics}{cognitivepilot.com}{Autopilot core design for agriculture and public vehicles}{Feb 2023 -- present}{Principal Software Engineer}{Moscow}
 
-\item Suggested and contributed 1 feature: print product info (semver, build date, commit SHA, CI id and arbitrary label).
-\item Helped to port MQTT publisher PoC on new code base. Added MQTT over TLS support. Utilized Paho, Mosquitto.
-\item Minimized surface attack on 3rd-party via reducing crypto providers from 2 to 1 (MbedTLS replaced with OpenSSL).
-\item Fixed issue with X.509 certificate generation to secure connect KISG-100 product and Siemens SINUMERIK CNC.
+\item Increased and stabilized IMU frame rate over UDP on 5\% between Control Unit (Jetson) and Navigation Module (arm64).
+\item Decoupled NN inference (Traffic Lights classifier) from Navigator via interface and intergated into 1 new tram module.
+\item Implemented and inregrated radar controller (SocketCAN, Kvaser) in 2 modes: targets detection (tracking), altitude measure.
+\item Integrated Redis support into LoRa daemon on Navigation Module (arm64) to stream RSSI into Control Unit (Jetson).
+\item Suggested and integrated git-svn tool to boost SVN mono-repository experience. Tool was in demand by 5 software engineers.
 
 \end{rCompany}
-\begin{rCompany}{Yandex, Self-Driving Group}{sdg.yandex.com}{contribution to self-driving cars technology}{2019 -- 2021}{Software Engineer}{Moscow, RU}
+\begin{rCompany}{Kaspersky Lab, Aprotech}{aprotech.online}{Industrial data diodes development with KasperskyOS}{Feb 2022 -- Sep 2022}{Senior Software Engineer}{Moscow}
 
-\item Integrated orientation (IMU) and localization (RTK) device into electrical and network rover infrastructure (GeoHub).
-\item Implemented 2 features for GeoHub: power rails monitor (ADC driver, ROS node), programmatic config for IMU frame.
+\item Helped to save product value: ported MQTT publisher prototype on new code base and added MQTT over SSL support.
+\item Reduced attack surface on product via minimazing cryptographic providers from 2 to 1: OpenSSL+MbedTLS to OpenSSL.
+\item Improved user experience via 1 useful feature -- logging product info: semver, build date, Git SHA, CI Id and arbitrary label.
+\item Fixed issue with secure connection between product and Siemens CNC. Root cause -- invalid X.509 certificate generation.
+
+\end{rCompany}
+\begin{rCompany}{Yandex, Self-Driving Group}{sdg.yandex.ru}{Contribution to various self-driving technologies}{Oct 2019 -- Jun 2021}{Software Engineer}{Moscow}
+
+\item Integrated new orientation (IMU) and localization (GNSS) device into electrical and network rover infrastructure (GeoHub).
+\item Implemented 2 features for GeoHub: power rails monitor (ADC driver, ROS node), config for IMU frame transformation.
 \item Ported rootfs switcher from amd64 (PC) to arm64 (Jetson AGX Xavier). Covered 2 scenarios: Yandex.Rover, Xavier farm.
-\item Camera pipeline. Reduced logging size via ring buffer. Implemented 9 new status monitors and camera frames filter.
-\item Configured CI (TeamCity) for 2 third-party libs (ser2net, rtklib). Artifacts: deb packets (armhf, arm64, amd64).
+\item Camera pipeline. Reduced logging size via ring buffer (Boost). Implemented 9 new status monitors and camera frames filter.
+\item Configured CI (TeamCity) for 2 third-party dependencies (ser2net, RTKLib). Artifacts -- deb packages (arm32, arm64, amd64).
 
 \end{rCompany}
-\begin{rCompany}{Arrival Robotics}{arrival.com}{creation of flexible robotized industrial factory}{2017 -- 2019}{Lead Software Engineer}{St. Petersburg, RU}
+\begin{rCompany}{Arrival Robotics}{arrival.com}{Creation of flexible robotized industrial factory technology}{Jun 2017 -- Sep 2019}{Lead Software Engineer}{St. Petersburg}
 
 \item Launched programmatic control for 4 industrial robot manipulators. Vendors: Kuka, Fanuc, ABB, Universal Robots.
 \item Contributed 1 feature to robotic simulator (Gazebo): control of scene objects via keyboard (moving, rotation).
@@ -61,16 +75,16 @@ $\bullet$ \textbf{Frameworks}    & ROS, MQTT (Mosquitto), Qt   & $\bullet$ \text
 \item Tech interview holding. Reviewed more than 10 candidates: embedded SW engineers, HW engineers, QA engineers.
 
 \end{rCompany}
-\begin{rCompany}{Rhonda Software}{rhondasoftware.com}{support and development of digital cameras}{2012 -- 2017}{Software Engineer I, II, III}{Vladivostok, RU}
+\begin{rCompany}{Rhonda Software}{rhondasoftware.com}{Support and development of digital still cameras firmware}{Oct 2012 -- May 2017}{Software Engineer (III, II, I)}{Vladivostok}
 
-\item Supported Camera-SDK (proprietary) components. Linux and RTOS device drivers. Firmware burning tool (Qt).
-\item Implemented raw data transceiver lib. Cross-platform: Windows, Linux, RTOS, multi-protocol: USB, UART, TCP.
-\item Performed products bring-up (EVT, DVT) in electronics plants for 5 customers: Nanit, Fusar, Glide, Revl, Soloshot.
-\item Supported SW of photo cameras. Drivers: CCD/CMOS, BSP, NAND, DRAM, LCD. Firmware burning tool (WinForms).
+\item Supported Camera-SDK components: Embedded Linux and RTOS (ThreadX) device drivers, firmware burning tool (Qt).
+\item Implemented raw data transceiver library. Cross-platform (Windows, Linux, RTOS), multi-protocol (USB, UART, TCP).
+\item Performed products bringup (EVT and DVT) in electronics factories for 5 customers: Nanit, Fusar, Glide, Revl, Soloshot.
+\item Supported SW for still cameras. Drivers: CCD/CMOS, BSP, NAND, DRAM, LCD. Firmware burning tool (WinForms).
 \item Resolved a number of MP-blocking SW issues for 6 camera brands: Nikon, Pentax, Fujifilm, Samsung, Garmin, Ability.
 
 \end{rCompany}
-\begin{rCompany}{Spider Pacific}{}{designing and manufacturing of applied devices for local market}{2010 -- 2012}{Electrical Engineer}{Vladivostok, RU}
+\begin{rCompany}{Spider Pacific}{}{Designing and manufacturing of applied devices for local market}{Sep 2010 -- Sep 2012}{Electrical Engineer}{Vladivostok}
 
 \item Designed HW of 4 device prototypes via end-to-end process: schematic (Eagle CAD), firmware (C99), PCBA.
 \item Utilized MCU (AVR), text LCD, accel-gyro sensors, vacuum tubes, op-amps, domain-specific IC and more.
@@ -80,11 +94,11 @@ $\bullet$ \textbf{Frameworks}    & ROS, MQTT (Mosquitto), Qt   & $\bullet$ \text
 
 \begin{rSection}{education}
 
-{\bf University of Science and Technology \textquote{MISIS}} {[\href{https://en.misis.ru}{ en.misis.ru }]} \hfill {2020 -- 2022} \\
-MSc. Data Science. GPA 4.7 out of 5. (not completed) \hfill {Moscow, RU}
+{\bf University of Science and Technology \textquote{MISIS}} {(\href{https://en.misis.ru}{en.misis.ru})} \hfill {2020 -- 2022} \\
+MSc. Data Science. GPA 4.7 out of 5. (not completed) \hfill {Moscow}
 
-{\bf Far Eastern Federal University} {[\href{https://www.dvfu.ru/en}{ dvfu.ru/en }]} \hfill {2005 -- 2010} \\
-Engineer. Information Systems and Technology. GPA 4.5 out of 5. \hfill {Vladivostok, RU}
+{\bf Far Eastern Federal University} {(\href{https://www.dvfu.ru/en}{dvfu.ru/en})} \hfill {2005 -- 2010} \\
+Engineer. Information Systems and Technologies. GPA 4.5 out of 5. \hfill {Vladivostok}
 
 \end{rSection}
 
